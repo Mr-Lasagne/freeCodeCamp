@@ -35,7 +35,9 @@ label {
   margin: 0.5rem 0;
 }
 
-input, textarea, select {
+input, 
+textarea, 
+select {
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
@@ -51,4 +53,9 @@ input, textarea {
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
+}
+
+input[type="submit"] {
+ display: block;
+ width: 60%;
 }
