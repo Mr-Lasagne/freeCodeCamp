@@ -1,83 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <fieldset class="container">
-      <header class="header">
-        <h1 id="title" class="text-center">Sample Survey Form</h1>
-        <p id="description" class="description text-center">Insert short survey description or gratitude for completing here</p>
-      </header>
-      <form id="survey-form">
-        <fieldset class="form-group">
-          <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required  />
-        </fieldset>
-        <fieldset class="form-group">
-          <label id="email-label" for="email">Email</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required  />
-        </fieldset>
-        <fieldset class="form-group">
-          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
-            <input type="number" name="age" id="number" min="10" max="120" class="form-control" placeholder="Age" />
-        </fieldset>
-        <fieldset class="form-group">
-          <p>Ask a question with an answer that can be selected from a dropdown?</p>
-          <select id="dropdown" name="dropdown" class="form-control" required>
-            <option disabled selected value>Select an option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-            <option value="5">Option 5</option>
-          </select>
-        </fieldset>
-  
-        <fieldset class="form-group">
-          <p>Ask a question that has a single required answer?</p>
-          <label><input name="radio-answer" value="option-1" type="radio" class="input-radio" checked />Option 1</label>
-          <label><input name="radio-answer" value="option-2" type="radio" class="input-radio" />Option 2</label>
-          <label><input name="radio-answer" value="option-3" type="radio" class="input-radio" />Option 3</label>
-        </fieldset>
-
-        <fieldset class="form-group">
-          <p>Ask another question with an answer that can be selected from a dropdown?</p>
-          <select id="dropdown-1" name="dropdown-1" class="form-control" required>
-            <option disabled selected value>Select an option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-          </select>
-        </fieldset>
-
-        <fieldset class="form-group">
-          <p>Ask a question with multiple possible answers?<span class="clue">(Check all that apply)</span></p>
-          <label><input name="answer" value="option-1" type="checkbox" class="input-checkbox">Option 1</label>
-          <label><input name="answer" value="option-2" type="checkbox" class="input-checkbox">Option 2</label>
-          <label><input name="answer" value="option-3" type="checkbox" class="input-checkbox">Option 3</label>
-          <label><input name="answer" value="option-4" type="checkbox" class="input-checkbox">Option 4</label>
-          <label><input name="answer" value="option-5" type="checkbox" class="input-checkbox">Option 5</label>
-          <label><input name="answer" value="option-6" type="checkbox" class="input-checkbox">Option 6</label>
-          <label><input name="answer" value="option-7" type="checkbox" class="input-checkbox">Option 7</label>
-          <label><input name="answer" value="option-8" type="checkbox" class="input-checkbox">Option 8</label>
-          <label><input name="answer" value="option-9" type="checkbox" class="input-checkbox">Option 9</label>
-          <label><input name="answer" value="option-10" type="checkbox" class="input-checkbox">Option 10</label>
-          <label><input name="answer" value="option-11" type="checkbox" class="input-checkbox">Option 11</label>
-        </fieldset>
-
-        <fieldset class="form-group">
-          <p>Ask a question that requires a long, typed answer?</p>
-          <textarea id="paragraph" name="paragraph" placeholder="Enter your placeholder text here..." class="input-textarea"></textarea>
-        </fieldset>
-      
-        <fieldset class="form-group">
-          <button type="submit" id="submit" class="submit-button">Submit</button>
-        </fieldset>
-      </form>
-    </fieldset>
+    <h1 id="title">Sample Survey Form</h1>
+    <p id="description">Insert short survey description here</p>
+    <form id="survey-form">
+      <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+      <label id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required /></label>
+      <label id="number-label">Age (optional) <input id="number" type="number" min="10" max="120" placeholder="Age" /></label>
+      <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="1">Option 1</option>
+      </select>
+      <input type="radio" value="option-1" name="input-radio" checked /> Option 1
+      <input type="radio" value="option-2" name="input-radio" /> Option 2
+      <input type="checkbox" value="option-1" /> Option 1
+      <input type="checkbox" value="option-2" /> Option 2
+      <textarea></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
   </body>
 </html>
