@@ -1,3 +1,3 @@
-This is one of the required projects to earn your certification.
+This is one of the required projects to earn my certification.
 
-For this project, you will build a survey form to collect data from your users.
+For this project, I will build a survey form to collect data from my users.
