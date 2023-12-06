@@ -5,13 +5,17 @@ header {
 
 body {
   font-family: sans-serif;
+  font-size: 16px;
   line-height: 1.25;
   background-color: #1b1b32;
-  color: #f3f3f3;
+  color: #f5f6f7;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
 }
 
 h1, p {
-  margin: 0 auto 0.5rem auto;
+  margin: 1em auto 0.5rem auto;
 }
 
 h1 {
@@ -24,17 +28,22 @@ p {
 }
 
 form {
-  padding: 2.5rem 0.75rem;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 2em;
+  width: 60vw;
 }
 
 label {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 fieldset {
   border: none;
+  padding: 2rem 0;
 }
 
 input, select, textarea, button {
@@ -42,6 +51,11 @@ input, select, textarea, button {
   font-size: inherit;
   line-height: inherit;
   margin: 0;
+  min-height: 2em;
+}
+
+input, textarea {
+  border: 1px solid #0a0a23;
 }
 
 button {
@@ -73,7 +87,7 @@ button {
   display: block;
   width: 100%;
   height: 2.25rem;
-  padding: 0.25rem 0.1;
+  padding: 0.25rem;
   border: 1px solid #cecece;
   border-radius: 0.25rem;
   color: #495057;
@@ -91,6 +105,7 @@ button {
   min-width: 1.25rem;
   margin-right: 0.75rem;
   display: inline-block;
+  cursor: pointer;
 }
 
 .input-textarea {
