@@ -6,7 +6,7 @@
 ## Table of Contents
 ### **[Responsive Web Design](/responsive-web-design/)**<br/><sup><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">*freeCodeCamp*</a></sup>
   - [Survey Form](/responsive-web-design/survey-form/)
-  - Tribute Page (TODO)
+  - [Tribute Page](/responsive-web-design/tribute-page/)
   - Technical Documentation Page (TODO)
   - Product Landing Page (TODO)
   - Personal Portfolio Webpage (TODO)
